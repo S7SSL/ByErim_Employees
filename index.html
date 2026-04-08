@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ByErim Employee Handbook</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,481 +13,243 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-            padding: 15px;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-            .container {
-                border-radius: 4px;
-            }
-            main {
-                padding: 20px;
-            }
-            header {
-                padding: 20px 10px;
-            }
-            h1 {
-                font-size: clamp(1.4em, 4vw, 1.8em);
-            }
-            h2 {
-                font-size: 1.4em;
-            }
-            h3 {
-                font-size: 1.1em;
-            }
-            .logo {
-                max-width: 120px;
-            }
+            font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            color: #2c2c2c;
+            background-color: #fafafa;
+            padding: 40px 20px;
         }
 
         .container {
-            max-width: 95vw;
+            max-width: 900px;
             margin: 0 auto;
             background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            overflow: hidden;
-            word-wrap: break-word;
+            padding: 60px 50px;
+            border-radius: 2px;
         }
 
         header {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: white;
-            padding: clamp(15px, 5vw, 40px) 20px;
             text-align: center;
-            border-bottom: 4px solid #d4af37;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 40px;
         }
 
         .logo {
-            max-width: 200px;
-            height: auto;
-            margin-bottom: 20px;
-            filter: brightness(1.1);
+            max-width: 150px;
+            margin-bottom: 30px;
         }
 
         h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 2.2em;
             font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
         }
 
-        .header-meta {
-            font-size: 0.95em;
-            opacity: 0.9;
+        .meta {
+            font-size: 0.9em;
+            color: #888;
             margin-top: 15px;
         }
 
-        .header-meta p {
-            margin: 5px 0;
-        }
-
         main {
-            padding: clamp(15px, 5vw, 40px);
+            margin-top: 40px;
         }
 
         section {
-            margin-bottom: 40px;
-            border-left: 4px solid #d4af37;
-            padding-left: 20px;
-        }
-
-        section:first-of-type {
-            margin-top: 0;
+            margin-bottom: 50px;
         }
 
         h2 {
-            font-size: clamp(1.4em, 4vw, 1.8em);
-            color: #d4af37;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1a1a1a;
         }
 
         h3 {
-            font-size: 1.3em;
-            color: #1a1a2e;
-            margin-top: 20px;
-            margin-bottom: 10px;
+            font-size: 1.1em;
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            color: #2c2c2c;
         }
 
         p {
-            margin-bottom: 12px;
-            color: #555;
+            margin-bottom: 15px;
+            color: #444;
         }
 
         ul, ol {
-            margin-left: 20px;
+            margin-left: 25px;
             margin-bottom: 15px;
         }
 
         li {
-            margin-bottom: 8px;
-            color: #555;
+            margin-bottom: 10px;
+            color: #444;
         }
 
         strong {
-            color: #d4af37;
-            font-weight: 600;
-        }
-
-        .highlight {
-            background-color: #fff3cd;
-            padding: 15px;
-            border-radius: 4px;
-            margin: 15px 0;
-            border-left: 4px solid #ffc107;
-        }
-
-        .important {
-            background-color: #f8d7da;
-            padding: 15px;
-            border-radius: 4px;
-            margin: 15px 0;
-            border-left: 4px solid #dc3545;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-            border: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #d4af37;
-            color: white;
-            padding: 12px;
-            text-align: left;
-            font-weight: 600;
-        }
-
-        td {
-            padding: 12px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        tr:hover {
-            background-color: #f5f5f5;
-        }
-
-        .contact-box {
-            background: #f0f0f0;
-            padding: 20px;
-            border-radius: 4px;
-            margin: 20px 0;
-        }
-
-        .contact-box p {
-            margin: 8px 0;
-        }
-
-        footer {
-            background: #1a1a2e;
-            color: white;
-            padding: 30px 40px;
-            text-align: center;
-            border-top: 4px solid #d4af37;
-        }
-
-        footer p {
-            margin: 5px 0;
-            color: #ccc;
-        }
-
-        .signature-box {
-            margin-top: 40px;
-            padding: 30px;
-            border: 3px solid #dc3545;
-            border-radius: 6px;
-            background: #fff5f5;
-        }
-
-        .signature-field {
-            margin: 25px 0;
-            padding: 15px;
-            background: white;
-            border: 1px solid #999;
-            border-radius: 4px;
-        }
-
-        .signature-field label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 10px;
-            color: #d4af37;
-        }
-
-        .signature-line {
-            min-height: 35px;
-            border-bottom: 2px solid #333;
-            font-family: monospace;
-        }
-
-        .receipt-tracking {
-            background: #f0f7f0;
-            border: 2px solid #28a745;
-            padding: 20px;
-            border-radius: 4px;
-            margin: 20px 0;
-        }
-
-        @media print {
-            body {
-                background: white;
-            }
-            .container {
-                box-shadow: none;
-            }
-            section {
-                page-break-inside: avoid;
-            }
-            header {
-                page-break-after: avoid;
-            }
-            .signature-box {
-                page-break-inside: avoid;
-                border-width: 3px !important;
-            }
+            font-weight: 700;
         }
 
         a {
-            color: #1a1a2e;
+            color: #d4af37;
             text-decoration: none;
+            border-bottom: 1px solid #d4af37;
         }
 
         a:hover {
-            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        .signature-section {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .signature-box {
+            padding: 30px;
+            background: #f9f9f9;
+            border-radius: 2px;
+            margin-top: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        .form-line {
+            border-bottom: 1px solid #333;
+            height: 30px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            body {
+                padding: 20px 10px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="logo.svg" alt="ByErim Logo" class="logo" style="max-width: 200px; height: auto; margin-bottom: 20px;">
-            <h1 style="color: white;">Employee Handbook</h1>
-            <div class="header-meta">
-                <p><strong>Version:</strong> 1.0</p>
-                <p><strong>Effective Date:</strong> April 8, 2026</p>
-                <p><strong>Scope:</strong> All ByErim employees and workers</p>
+            <img src="logo.svg" alt="ByErim" class="logo">
+            <h1>Employee Handbook</h1>
+            <div class="meta">
+                <p>Effective April 8, 2026</p>
             </div>
         </header>
 
         <main>
-            <section class="important">
-                <h2>📋 Hey, Welcome to ByErim</h2>
-                <p>This handbook is your guide to working here. No confusing legalese — just straightforward info about how we do things.</p>
-                <p>If anything doesn't make sense, just ask Sat. We're here to help.</p>
-            </section>
-
-            <section class="important">
-                <h2>✍️ Please Sign & Return This</h2>
-                <p>Scroll down to the signature section below, you'll find a signature section. Just print it, read through, sign your name, once you.re done.</p>
-                <p>This isn't scary — it just means you've read it and understand the policies. Takes 5 minutes.</p>
-                <p><strong>Deadline:</strong> Within 7 days. Your signature will be recorded automatically.</p>
-            </section>
-
-            <!-- Abbreviated content for demo - full handbook would include all 14 sections -->
             <section>
-                <h2>⏰ Your Hours</h2>
-                <p>You'll work the hours in your contract. If you work more than 6 hours, you get a 20-minute paid break.</p>
-            </section>
-
-
-
-            <section>
-                <h2>🏥 If You're Ill</h2>
-                <p><strong>Tell Sat ASAP</strong> — don't ghost. A quick text or call is fine.</p>
-                <p>Employees get paid sick leave (Statutory Sick Pay) after 3 days. Workers don't, but let's talk if you need time off.</p>
-                <p>If you're off for more than a week, get a doctor's note.</p>
+                <h2>Welcome</h2>
+                <p>This handbook outlines our policies and procedures. Please read through and familiarize yourself with the information below.</p>
             </section>
 
             <section>
-                <h2>🏋️ Manual Handling & Warehouse Safety</h2>
-                <p><strong>All warehouse staff must complete manual handling training before handling goods over 20kg.</strong></p>
-                <h3>Required Training Course</h3>
-                <p><strong>High Speed Training — Manual Handling Course</strong></p>
-                <ul>
-                    <li><strong>Duration:</strong> 3 hours (online, self-paced)</li>
-                    <li><strong>Cost:</strong> £30 + VAT</li>
-                    <li><strong>Certificate:</strong> Awarded upon completion</li>
-                    <li><strong>Link:</strong> <a href="https://www.highspeedtraining.co.uk/courses/health-and-safety/manual-handling-training" target="_blank">High Speed Training Manual Handling</a></li>
-                </ul>
-                <p><strong>What you'll learn:</strong></p>
-                <ul>
-                    <li>How to lift safely without injuring your back</li>
-                    <li>Risks of improper manual handling</li>
-                    <li>Best practices for warehouse work</li>
-                    <li>When to ask for help</li>
-                </ul>
-                <p style="margin-top: 20px; padding: 15px; background: #fff3cd; border-radius: 4px; border-left: 4px solid #ffc107;">
-                    <strong>Action:</strong> Once you've completed the course, download your certificate and email to sat@byerim.com. Keep it as proof of training.
-                </p>
+                <h2>Working Hours</h2>
+                <p>Your working hours are set out in your contract. You're entitled to breaks as required by UK law.</p>
             </section>
 
             <section>
-                <h2>🔐 Confidentiality & Data Protection</h2>
-                <p>Keep the following confidential:</p>
-                <ul>
-                    <li>Product formulas & ingredients</li>
-                    <li>Supplier details & pricing</li>
-                    <li>Customer data (names, emails, orders)</li>
-                    <li>Sales figures & business strategy</li>
-                </ul>
-                <p>Breach of confidentiality may result in disciplinary action or dismissal.</p>
+                <h2>Confidentiality</h2>
+                <p>Information about our products, formulas, suppliers, customers, and business operations must remain confidential. This applies to all company information you access in your role.</p>
+                <p>Breach of confidentiality may result in disciplinary action.</p>
             </section>
 
             <section>
-                <h2>⚖️ Disciplinary & Grievance Procedures</h2>
-                <h3>Disciplinary Process</h3>
-                <ol>
-                    <li>Informal chat with Sat</li>
-                    <li>Formal warning (if behavior continues)</li>
-                    <li>Final warning (if still not improved)</li>
-                    <li>Dismissal (if no improvement)</li>
-                </ol>
-                <h3>Grievance Process</h3>
-                <p>If you have a complaint about treatment, contact Sat in writing: sat@byerim.com</p>
+                <h2>Conduct & Behavior</h2>
+                <p>We expect professional conduct at all times. This includes respect for colleagues, customers, and our brand.</p>
+                <p>Serious misconduct may result in disciplinary action, including dismissal.</p>
             </section>
 
             <section>
-                <h2>✋ Discrimination & Equality</h2>
-                <p>ByErim does not discriminate based on age, gender, race, religion, sexual orientation, disability, pregnancy, or marital status.</p>
-                <p>ByErim has zero tolerance for bullying, harassment, or discrimination.</p>
+                <h2>Discipline & Grievance</h2>
+                <h3>Discipline</h3>
+                <p>If there's a conduct issue, we'll address it directly with you. Serious matters follow a formal process with opportunity for your response.</p>
+                
+                <h3>Grievance</h3>
+                <p>If you have a concern, contact your manager. We'll address it fairly and promptly.</p>
             </section>
 
             <section>
-                <h2>💷 Pay & Payment</h2>
-                <p>Your hourly rate is stated in your contract.</p>
-                <p><strong>All rates meet or exceed National Living/Minimum Wage.</strong></p>
-                <p>Payment is made by direct bank transfer. Check your payslip carefully — if something's wrong, tell Sat immediately.</p>
+                <h2>Equality & Non-Discrimination</h2>
+                <p>ByErim does not discriminate based on age, gender, race, religion, sexual orientation, disability, pregnancy, or any other protected characteristic.</p>
+                <p>We have zero tolerance for harassment or bullying.</p>
             </section>
 
             <section>
-                <h2>🔒 Data Protection</h2>
-                <p>ByErim holds personal data on you: name, address, email, bank details, tax info, and performance records.</p>
-                <p><strong>Your rights:</strong></p>
-                <ul>
-                    <li>Right to know what data is held on you</li>
-                    <li>Right to request a copy (Data Subject Access Request)</li>
-                    <li>Right to have data corrected if wrong</li>
-                    <li>Right to have data deleted (in some circumstances)</li>
-                </ul>
+                <h2>Health & Safety</h2>
+                <p>We're committed to a safe working environment. Report any hazards or accidents immediately.</p>
+                <h3>Warehouse</h3>
+                <p>All warehouse staff must complete manual handling training. This covers safe lifting and injury prevention for items over 20kg.</p>
+                <p>Training: <a href="https://www.highspeedtraining.co.uk/courses/health-and-safety/manual-handling-training" target="_blank">High Speed Training - Manual Handling</a> (3 hours, online)</p>
             </section>
 
             <section>
-                <h2>📞 Contact & Support</h2>
-                <div class="contact-box">
-                    <h3>Questions About Policies?</h3>
-                    <p><strong>Sat</strong> (COO): sat@byerim.com</p>
-                </div>
-                <div class="contact-box">
-                    <h3>Training & Development</h3>
-                    <p><strong>Manual Handling Training:</strong> <a href="https://www.highspeedtraining.co.uk/courses/health-and-safety/manual-handling-training" target="_blank">High Speed Training (£30)</a></p>
-                    <p>Required for all warehouse staff. Sat will arrange enrollment.</p>
-                </div>
-                <div class="contact-box">
-                    <h3>External Support</h3>
-                    <p><strong>ACAS:</strong> Free advice on employment rights</p>
-                    <p>Phone: 0300 123 1100 | <a href="https://www.acas.org.uk" target="_blank">www.acas.org.uk</a></p>
-                </div>
+                <h2>Pay</h2>
+                <p>Your hourly rate is specified in your contract. Payment is by direct transfer.</p>
             </section>
 
-            <!-- SIGNATURE SECTION - CRITICAL FOR COMPLIANCE -->
-            <section class="important">
-                <h2>🖊️ Your Signature</h2>
-                <p>Just sign below to confirm you've read this handbook and understand the policies.</p>
+            <section>
+                <h2>Data Protection</h2>
+                <p>ByErim holds personal data for employment purposes only. Your data is protected and not shared externally.</p>
+            </section>
+
+            <section class="signature-section">
+                <h2>Acknowledgment</h2>
+                <p>Please sign below to confirm you have read and understood this handbook.</p>
                 
                 <div class="signature-box">
-                    <h3 style="color: #dc3545; margin-top: 0;">📋 How to Sign</h3>
-                    <ol style="font-size: 0.95em;">
-                        <li><strong>Print this page</strong> (Cmd+P on Mac, Ctrl+P on Windows)</li>
-                        <li><strong>Write your name</strong> and <strong>sign</strong> with a pen</li>
-                        <li><strong>Email the PDF or give it to Sat</strong> within 7 days</li>
-                    </ol>
-
-                    <div style="margin: 30px 0; padding: 20px; border: 2px solid #333; background: white; border-radius: 4px;">
-                        <div class="signature-field">
-                            <label>Employee Name (PRINT CLEARLY):</label>
-                            <div class="signature-line"></div>
-                        </div>
-
-                        <div class="signature-field">
-                            <label>Employee Signature (MUST BE HANDWRITTEN):</label>
-                            <div style="min-height: 50px; border-bottom: 2px solid #333;"></div>
-                        </div>
-
-                        <div class="signature-field">
-                            <label>Date Signed (DD/MM/YYYY):</label>
-                            <div class="signature-line"></div>
-                        </div>
-
-                        <div class="signature-field">
-                            <label>Employee Contact Email:</label>
-                            <div class="signature-line"></div>
-                        </div>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <div class="form-line"></div>
                     </div>
-
-                    <div style="margin: 20px 0; padding: 15px; background: #fff3cd; border-radius: 4px; border-left: 4px solid #ffc107;">
-                        <p style="margin: 0; font-size: 0.95em;">
-                            <strong>📧 Return to:</strong> sat@byerim.com<br>
-                            <strong>Method:</strong> Print, sign, scan/photograph, email as PDF<br>
-                            <strong>Deadline:</strong> Within 7 days of receipt<br>
-                            <strong>Retention:</strong> Signed form kept in your personnel record
-                        </p>
+                    <div class="form-group">
+                        <label>Signature</label>
+                        <div class="form-line" style="height: 40px;"></div>
                     </div>
-                </div>
-
-                <div class="receipt-tracking">
-                    <h3 style="margin-top: 0; color: #28a745;">✅ (Sat's section — skip this)</h3>
-                    
-                    <table>
-                        <tr>
-                            <td style="padding: 10px;"><strong>Date Given to Employee:</strong></td>
-                            <td style="padding: 10px; border-bottom: 2px solid #333;"></td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 10px;"><strong>Date Signed Copy Received:</strong></td>
-                            <td style="padding: 10px; border-bottom: 2px solid #333;"></td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 10px;"><strong>Signature Verified By:</strong></td>
-                            <td style="padding: 10px; border-bottom: 2px solid #333;"></td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 10px;"><strong>Filed in Personnel Record:</strong></td>
-                            <td style="padding: 10px; border-bottom: 2px solid #333;">☐ Yes ☐ Date: ______</td>
-                        </tr>
-                    </table>
+                    <div class="form-group">
+                        <label>Date</label>
+                        <div class="form-line"></div>
+                    </div>
                 </div>
             </section>
-
         </main>
 
         <footer>
-            <p><strong>ByErim Employee Handbook v1.0</strong></p>
-            <p>Effective: April 8, 2026</p>
-            <p>ByErim Employee Handbook</p>
-            <p>Approved by: Sat Lally (COO)</p>
-            <p style="margin-top: 20px; font-size: 0.85em; color: #ccc;">⚠️ CONFIDENTIAL — This handbook is for ByErim staff only.</p>
-            <p style="font-size: 0.85em; color: #ccc;">Receipt and acknowledgment must be documented. Signed confirmations are retained in personnel files per UK employment law.</p>
+            <p>ByErim Employee Handbook | April 2026</p>
         </footer>
     </div>
-
-    <script>
-        // For printing, ensure signature section is on last page
-        window.addEventListener('beforeprint', function() {
-            const sigSection = document.querySelector('.important:last-of-type');
-            if (sigSection) {
-                sigSection.style.pageBreakInside = 'avoid';
-            }
-        });
-    </script>
 </body>
 </html>
