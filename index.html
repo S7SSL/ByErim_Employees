@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByErim Employee Handbook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid #d4af37;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header-meta {
+            font-size: 0.95em;
+            opacity: 0.9;
+            margin-top: 15px;
+        }
+
+        .header-meta p {
+            margin: 5px 0;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            border-left: 4px solid #d4af37;
+            padding-left: 20px;
+        }
+
+        section:first-of-type {
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #1a1a2e;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: attr(data-icon);
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: #16213e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: #555;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        strong {
+            color: #1a1a2e;
+            font-weight: 600;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+            border-left: 4px solid #ffc107;
+        }
+
+        .important {
+            background-color: #f8d7da;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+            border-left: 4px solid #dc3545;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #1a1a2e;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .checklist {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .checklist li {
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .checklist li::before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        .contact-box {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+
+        .contact-box p {
+            margin: 8px 0;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+            border-top: 4px solid #d4af37;
+        }
+
+        footer p {
+            margin: 5px 0;
+            color: #ccc;
+        }
+
+        .toc {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+            border-left: 4px solid #d4af37;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+        }
+
+        .toc ol {
+            margin: 10px 0;
+        }
+
+        .toc li {
+            margin: 5px 0;
+        }
+
+        .toc a {
+            color: #16213e;
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+            color: #d4af37;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+            }
+            section {
+                page-break-inside: avoid;
+            }
+        }
+
+        .signature-box {
+            margin-top: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .signature-line {
+            margin: 30px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #333;
+            font-family: monospace;
+        }
+
+        .signature-label {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <svg class="logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Simple ByErim logo placeholder -->
+                <rect width="200" height="200" fill="#d4af37"/>
+                <text x="100" y="120" font-size="48" font-weight="bold" fill="#1a1a2e" text-anchor="middle" font-family="Arial">BE</text>
+                <text x="100" y="150" font-size="20" fill="#1a1a2e" text-anchor="middle" font-family="Arial">ByErim</text>
+            </svg>
+            <h1>Employee Handbook</h1>
+            <div class="header-meta">
+                <p><strong>Version:</strong> 1.0</p>
+                <p><strong>Effective Date:</strong> April 8, 2026</p>
+                <p><strong>Scope:</strong> All ByErim employees and workers</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="highlight">
+                <h2>📋 Welcome to ByErim</h2>
+                <p>This handbook outlines the key policies and procedures for working at ByErim. It applies to all employees and workers.</p>
+                <p><strong>If anything is unclear, ask Sat (sat@byerim.com) or BeBe (marge@byerim.com).</strong></p>
+            </section>
+
+            <div class="toc">
+                <h3>📑 Table of Contents</h3>
+                <ol>
+                    <li><a href="#working-hours">Working Hours & Flexibility</a></li>
+                    <li><a href="#annual-leave">Annual Leave</a></li>
+                    <li><a href="#sickness">Sickness & Absence</a></li>
+                    <li><a href="#confidentiality">Confidentiality & Data Protection</a></li>
+                    <li><a href="#social-media">Social Media & Internet Use</a></li>
+                    <li><a href="#health-safety">Health & Safety</a></li>
+                    <li><a href="#discipline">Disciplinary & Grievance Procedures</a></li>
+                    <li><a href="#discrimination">Discrimination & Equality</a></li>
+                    <li><a href="#flexible">Flexible Working</a></li>
+                    <li><a href="#termination">Notice Periods & Termination</a></li>
+                    <li><a href="#pay">Pay & Payment</a></li>
+                    <li><a href="#references">References & Verification</a></li>
+                    <li><a href="#data">Data Protection</a></li>
+                    <li><a href="#contact">Contact & Support</a></li>
+                </ol>
+            </div>
+
+            <section id="working-hours">
+                <h2 data-icon="⏰">Working Hours & Flexibility</h2>
+                
+                <h3>Standard Hours</h3>
+                <ul>
+                    <li><strong>Employees & Workers:</strong> As agreed in your employment contract</li>
+                    <li><strong>Part-time roles:</strong> Specific hours per day/week/month as documented</li>
+                    <li><strong>Flexible roles:</strong> Hours may vary week to week based on business needs</li>
+                </ul>
+
+                <h3>Overtime</h3>
+                <p>Overtime is not expected unless agreed in advance. If overtime is needed, discuss with Sat beforehand. Compensation for overtime (if any) will be agreed in writing.</p>
+
+                <h3>Flexible Working (Employees Only)</h3>
+                <ul>
+                    <li><strong>Employees</strong> can request flexible working arrangements</li>
+                    <li>Request must be in writing to Sat</li>
+                    <li>ByErim will consider all requests fairly</li>
+                    <li>Examples: Different hours, working from home, compressed week</li>
+                </ul>
+
+                <h3>Break Entitlements</h3>
+                <ul>
+                    <li><strong>Workers & Employees:</strong> 20-minute break for every 6 hours worked</li>
+                    <li>Breaks are paid</li>
+                    <li>Breaks must be taken during your shift</li>
+                </ul>
+            </section>
+
+            <section id="annual-leave">
+                <h2 data-icon="🏖️">Annual Leave</h2>
+                
+                <h3>Entitlement</h3>
+                <ul>
+                    <li><strong>Employees:</strong> 20 days paid annual leave per year (statutory minimum)</li>
+                    <li><strong>Workers:</strong> 5.6 weeks paid annual leave per year (same as employees)</li>
+                    <li>Paid leave is calculated as percentage of hours worked</li>
+                </ul>
+
+                <h3>How to Book Leave</h3>
+                <ol>
+                    <li>Request leave from Sat as soon as possible</li>
+                    <li>Sat will confirm availability</li>
+                    <li>Once confirmed, it's booked</li>
+                    <li>You'll receive written confirmation</li>
+                </ol>
+
+                <h3>Timing Restrictions</h3>
+                <ul>
+                    <li>Leave is subject to business needs</li>
+                    <li>Bank holidays may be counted as leave (to be confirmed with Sat)</li>
+                    <li>ByErim will not unreasonably refuse leave requests</li>
+                </ul>
+            </section>
+
+            <section id="sickness">
+                <h2 data-icon="🏥">Sickness & Absence</h2>
+                
+                <h3>Reporting Sickness</h3>
+                <div class="important">
+                    <strong>If you are unwell and cannot work:</strong>
+                    <ol>
+                        <li><strong>Tell Sat immediately</strong> (don't just not show up)</li>
+                        <li>If possible, tell her before your shift starts</li>
+                        <li>If you can't contact Sat, contact BeBe (marge@byerim.com)</li>
+                        <li>Tell her: What's wrong (briefly), when you expect to return, if you need to see a doctor</li>
+                    </ol>
+                </div>
+
+                <h3>Statutory Sick Pay (SSP)</h3>
+                <ul>
+                    <li><strong>Employees:</strong> Entitled to Statutory Sick Pay (SSP) if off sick for 3+ days</li>
+                    <li><strong>Workers:</strong> Are <strong>NOT</strong> entitled to SSP (only employees receive it)</li>
+                    <li>SSP is paid at the statutory rate (currently ~£105/week)</li>
+                </ul>
+
+                <h3>Doctor's Certificates</h3>
+                <ul>
+                    <li>If off sick for more than 7 calendar days, you must provide a doctor's letter (Fit Note)</li>
+                    <li>Shorter absences: Sat may ask you to confirm you were genuinely ill</li>
+                </ul>
+            </section>
+
+            <section id="confidentiality">
+                <h2 data-icon="🔐">Confidentiality & Data Protection</h2>
+                
+                <h3>Confidential Information</h3>
+                <p>You must keep the following information confidential:</p>
+                <ul>
+                    <li><strong>Product formulas & ingredients</strong> (ByErim's competitive advantage)</li>
+                    <li><strong>Supplier details & pricing</strong> (not for sharing with competitors)</li>
+                    <li><strong>Customer data</strong> (names, emails, addresses, order history)</li>
+                    <li><strong>Sales figures & business strategy</strong> (not public information)</li>
+                    <li><strong>Any information marked "confidential"</strong> by management</li>
+                </ul>
+
+                <h3>How to Protect Confidentiality</h3>
+                <ul class="checklist">
+                    <li>Don't discuss ByErim business with outsiders (friends, family, competitors)</li>
+                    <li>Don't share customer data on personal devices or unsecured networks</li>
+                    <li>Lock your computer when you step away</li>
+                    <li>Don't leave sensitive documents lying around</li>
+                    <li>Delete emails with confidential info when no longer needed</li>
+                </ul>
+
+                <div class="important">
+                    <strong>Breach of Confidentiality:</strong> Serious breach may result in disciplinary action (including dismissal). Legal action may be taken to recover damages.
+                </div>
+            </section>
+
+            <section id="social-media">
+                <h2 data-icon="📱">Social Media & Internet Use</h2>
+                
+                <h3>Personal Social Media</h3>
+                <p>You can use social media in your own time, but:</p>
+                <ul>
+                    <li><strong>Don't post about ByErim</strong> without permission</li>
+                    <li><strong>Don't share customer/product information</strong> publicly</li>
+                    <li><strong>Don't claim to speak for ByErim</strong> unless authorized</li>
+                    <li><strong>Don't post negative comments</strong> about ByErim, colleagues, or customers</li>
+                    <li>Remember: Posts are public and permanent</li>
+                </ul>
+
+                <h3>Internet Use at Work</h3>
+                <ul>
+                    <li>Internet should be used primarily for work purposes</li>
+                    <li>Limited personal use (checking email, quick research) is acceptable</li>
+                    <li>Don't access: Adult content, Gambling sites, Illegal content, Anything that distracts from work</li>
+                </ul>
+            </section>
+
+            <section id="health-safety">
+                <h2 data-icon="⚠️">Health & Safety</h2>
+                
+                <h3>Your Responsibilities</h3>
+                <ul>
+                    <li>Report all hazards and accidents to Sat immediately</li>
+                    <li>Use safety equipment provided (if any)</li>
+                    <li>Follow safe working practices (especially in warehouse)</li>
+                    <li>Don't ignore safety concerns for speed</li>
+                    <li>Know your workplace hazards (covered in training/risk assessment)</li>
+                </ul>
+
+                <h3>Accidents & Injuries</h3>
+                <ol>
+                    <li><strong>Tell Sat immediately</strong> — even minor injuries</li>
+                    <li><strong>Get first aid</strong> if needed (contact Sat or 999 for emergency)</li>
+                    <li><strong>Document the accident</strong> — what happened, when, how</li>
+                    <li><strong>Report to insurance</strong> — Sat will file formal accident report if needed</li>
+                </ol>
+
+                <h3>Manual Handling Training</h3>
+                <ul>
+                    <li>All staff handling 30kg+ boxes must complete manual handling training</li>
+                    <li>Training is mandatory (legally required)</li>
+                    <li>Keep your certificate — proof you were trained</li>
+                </ul>
+            </section>
+
+            <section id="discipline">
+                <h2 data-icon="⚖️">Disciplinary & Grievance Procedures</h2>
+                
+                <h3>Disciplinary Process</h3>
+                <p><strong>What Gets Disciplined?</strong></p>
+                <ul>
+                    <li>Serious misconduct (theft, harassment, violence, gross negligence)</li>
+                    <li>Repeated breaches of policy (lateness, absence, poor performance)</li>
+                    <li>Breach of confidentiality or data protection</li>
+                    <li>Health & safety violations</li>
+                    <li>Insubordination or disrespect to colleagues</li>
+                </ul>
+
+                <p><strong>Process:</strong></p>
+                <ol>
+                    <li><strong>Informal Chat</strong> — Sat will discuss the issue with you</li>
+                    <li><strong>Formal Warning</strong> — if behavior continues</li>
+                    <li><strong>Final Warning</strong> — if behavior still not improved</li>
+                    <li><strong>Dismissal</strong> — if no improvement</li>
+                </ol>
+
+                <h3>Your Rights in Disciplinary Process</h3>
+                <ul>
+                    <li>Right to know what the allegation is</li>
+                    <li>Right to be heard (explain your side)</li>
+                    <li>Right to request a meeting with Sat</li>
+                    <li>Right to be accompanied by a friend/representative if you wish</li>
+                    <li>Right to appeal a decision</li>
+                </ul>
+
+                <h3>Grievance Process</h3>
+                <p><strong>How to Raise a Grievance:</strong></p>
+                <ol>
+                    <li>Talk to Sat informally first if possible</li>
+                    <li>Written Grievance to Sat (sat@byerim.com) if needed</li>
+                    <li>Meeting with Sat to discuss and resolve</li>
+                    <li>Response in writing from Sat</li>
+                </ol>
+            </section>
+
+            <section id="discrimination">
+                <h2 data-icon="✋">Discrimination & Equality</h2>
+                
+                <h3>Protected Characteristics</h3>
+                <p>ByErim does not discriminate based on:</p>
+                <ul>
+                    <li>Age</li>
+                    <li>Gender</li>
+                    <li>Gender reassignment</li>
+                    <li>Race</li>
+                    <li>Religion/belief</li>
+                    <li>Sexual orientation</li>
+                    <li>Disability</li>
+                    <li>Pregnancy</li>
+                    <li>Marital/civil partnership status</li>
+                </ul>
+
+                <h3>Harassment & Bullying</h3>
+                <div class="important">
+                    <strong>ByErim has zero tolerance for:</strong>
+                    <ul>
+                        <li>Bullying or intimidation</li>
+                        <li>Sexual harassment or inappropriate comments</li>
+                        <li>Discrimination or prejudice</li>
+                        <li>Hostile behavior</li>
+                    </ul>
+                    <p><strong>If you experience harassment, report to Sat immediately.</strong></p>
+                </div>
+            </section>
+
+            <section id="flexible">
+                <h2 data-icon="🤝">Flexible Working (Employees Only)</h2>
+                
+                <h3>Who Can Request?</h3>
+                <ul>
+                    <li><strong>Employees only</strong> (workers & self-employed cannot request)</li>
+                    <li>You must have worked at ByErim for 26+ weeks</li>
+                    <li>One request per 12 months</li>
+                </ul>
+
+                <h3>What Can You Request?</h3>
+                <ul>
+                    <li>Different hours (e.g., 3 days/week instead of 5)</li>
+                    <li>Different times (e.g., 7am-3pm instead of 9am-5pm)</li>
+                    <li>Working from home (if role permits)</li>
+                    <li>Compressed week (longer days, fewer days)</li>
+                    <li>Job share (if possible)</li>
+                </ul>
+
+                <h3>How to Request</h3>
+                <ol>
+                    <li>Write to Sat (email)</li>
+                    <li>Explain what you want (be specific)</li>
+                    <li>Explain why you want it</li>
+                    <li>Suggest when it could start</li>
+                    <li>Request a meeting to discuss</li>
+                </ol>
+            </section>
+
+            <section id="termination">
+                <h2 data-icon="📤">Notice Periods & Termination</h2>
+                
+                <h3>Resignation (You Leaving)</h3>
+                <ul>
+                    <li>Give notice as stated in your employment contract</li>
+                    <li>Typical notice: 1-2 weeks (check your contract)</li>
+                    <li>Give notice in writing to Sat</li>
+                    <li>Work your notice period (or pay in lieu may apply)</li>
+                    <li>Settle final pay, including any accrued leave</li>
+                </ul>
+
+                <h3>Dismissal (ByErim Ending Employment)</h3>
+                <ul>
+                    <li>ByErim will follow disciplinary procedures</li>
+                    <li>You have right to appeal</li>
+                    <li>Notice period applies unless dismissed for gross misconduct</li>
+                    <li>Final paycheck will include settlement</li>
+                </ul>
+            </section>
+
+            <section id="pay">
+                <h2 data-icon="💷">Pay & Payment</h2>
+                
+                <h3>Pay Rates</h3>
+                <ul>
+                    <li>Your hourly rate is stated in your employment contract</li>
+                    <li>Rates meet or exceed National Living/Minimum Wage</li>
+                    <li>Pay includes any annual leave allowance (check contract for details)</li>
+                </ul>
+
+                <h3>How You're Paid</h3>
+                <ul>
+                    <li>Payment frequency is stated in your contract (typically monthly or weekly)</li>
+                    <li>Direct bank transfer</li>
+                    <li>Payslip will show: Hours worked, Gross pay, Tax & National Insurance, Net pay</li>
+                </ul>
+
+                <h3>Query About Pay</h3>
+                <ul>
+                    <li>Check your payslip carefully</li>
+                    <li>If something's wrong, tell Sat immediately</li>
+                    <li>Disputes will be resolved fairly</li>
+                </ul>
+            </section>
+
+            <section id="references">
+                <h2 data-icon="📄">References & Verification</h2>
+                
+                <h3>Employment References</h3>
+                <ul>
+                    <li>Upon leaving ByErim, you may request a reference</li>
+                    <li>References will be factual and accurate</li>
+                    <li>Sat will confirm basic details (dates, role, performance)</li>
+                </ul>
+
+                <h3>Employment Verification</h3>
+                <p>If asked by a future employer or lender, Sat can confirm:</p>
+                <ul>
+                    <li>Your employment dates</li>
+                    <li>Your job title</li>
+                    <li>Your salary (if agreed)</li>
+                </ul>
+            </section>
+
+            <section id="data">
+                <h2 data-icon="🔒">Data Protection (Your Information)</h2>
+                
+                <h3>What Data ByErim Holds</h3>
+                <ul>
+                    <li>Name, address, phone number, email</li>
+                    <li>Bank details (for payment)</li>
+                    <li>Tax information (National Insurance number)</li>
+                    <li>Health information (if relevant, e.g., disabilities)</li>
+                    <li>Performance records</li>
+                </ul>
+
+                <h3>Your Rights</h3>
+                <ul>
+                    <li>Right to know what data ByErim holds on you</li>
+                    <li>Right to request a copy (Data Subject Access Request)</li>
+                    <li>Right to have data corrected if inaccurate</li>
+                    <li>Right to have data deleted (in some circumstances)</li>
+                </ul>
+
+                <h3>How Data Is Protected</h3>
+                <ul>
+                    <li>Kept secure (not shared with outsiders)</li>
+                    <li>Only used for employment purposes</li>
+                    <li>Deleted when no longer needed (or after 6 years per employment law)</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2 data-icon="📞">Contact & Support</h2>
+                
+                <div class="contact-box">
+                    <h3>Questions About Policies?</h3>
+                    <p><strong>Sat</strong> (Head of Operations): sat@byerim.com</p>
+                    <p><strong>BeBe</strong> (HR/Compliance): marge@byerim.com</p>
+                </div>
+
+                <div class="contact-box">
+                    <h3>Raising Concerns or Grievances?</h3>
+                    <p><strong>Sat</strong> (first point of contact): sat@byerim.com</p>
+                    <p><strong>Erim</strong> (CEO, if needed): erim@byerim.com</p>
+                </div>
+
+                <div class="contact-box">
+                    <h3>External Support</h3>
+                    <p><strong>ACAS</strong> (Advisory, Conciliation & Arbitration Service):<br>
+                    <a href="https://www.acas.org.uk" target="_blank">https://www.acas.org.uk</a><br>
+                    Free advice on employment rights | Phone: 0300 123 1100</p>
+                    <p><strong>Citizens Advice</strong>:<br>
+                    <a href="https://www.citizensadvice.org.uk" target="_blank">https://www.citizensadvice.org.uk</a><br>
+                    Free advice on employment, benefits, etc.</p>
+                </div>
+            </section>
+
+            <section class="highlight">
+                <h2>✅ Summary</h2>
+                <p>ByErim is committed to:</p>
+                <ul>
+                    <li>✅ Fair treatment of all staff</li>
+                    <li>✅ Safe working environment</li>
+                    <li>✅ Respect and dignity</li>
+                    <li>✅ Clear policies and procedures</li>
+                    <li>✅ Open communication</li>
+                </ul>
+                <p><strong>If anything in this handbook is unclear, ask Sat or BeBe. Don't guess.</strong></p>
+            </section>
+
+            <section>
+                <h2>🖊️ Acknowledgment</h2>
+                <p>By working for ByErim, you acknowledge that:</p>
+                <ul class="checklist">
+                    <li>You have received and read this handbook</li>
+                    <li>You understand the policies outlined</li>
+                    <li>You agree to follow these policies</li>
+                    <li>You know how to raise concerns or grievances</li>
+                </ul>
+
+                <div class="signature-box">
+                    <p><strong>Please print this page and sign below:</strong></p>
+                    <div class="signature-line">
+                        <span class="signature-label">Name (print)</span>
+                    </div>
+                    <div class="signature-line">
+                        <span class="signature-label">Signature</span>
+                    </div>
+                    <div class="signature-line">
+                        <span class="signature-label">Date</span>
+                    </div>
+                    <p style="margin-top: 20px; font-size: 0.9em; color: #666;">Email signed copy to: sat@byerim.com or give to Sat in person.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p><strong>ByErim Employee Handbook v1.0</strong></p>
+            <p>Effective: April 8, 2026</p>
+            <p>Created by: BeBe (ByErim AI Assistant)</p>
+            <p>Approved by: Sat Lally (COO)</p>
+            <p style="margin-top: 20px; font-size: 0.85em;">This handbook is confidential and for ByErim staff only.</p>
+        </footer>
+    </div>
+</body>
+</html>
