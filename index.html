@@ -33,7 +33,7 @@
                 padding: 20px 10px;
             }
             h1 {
-                font-size: 1.8em;
+                font-size: clamp(1.4em, 4vw, 1.8em);
             }
             h2 {
                 font-size: 1.4em;
@@ -47,7 +47,7 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 95vw;
             margin: 0 auto;
             background: white;
             border-radius: 8px;
@@ -59,7 +59,7 @@
         header {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: white;
-            padding: 40px 20px;
+            padding: clamp(15px, 5vw, 40px) 20px;
             text-align: center;
             border-bottom: 4px solid #d4af37;
         }
@@ -88,7 +88,7 @@
         }
 
         main {
-            padding: 40px;
+            padding: clamp(15px, 5vw, 40px);
         }
 
         section {
@@ -102,7 +102,7 @@
         }
 
         h2 {
-            font-size: 1.8em;
+            font-size: clamp(1.4em, 4vw, 1.8em);
             color: #d4af37;
             margin-bottom: 15px;
             display: flex;
