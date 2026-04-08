@@ -304,6 +304,29 @@
             </section>
 
             <section>
+                <h2>🏋️ Manual Handling & Warehouse Safety</h2>
+                <p><strong>All warehouse staff must complete manual handling training before handling goods over 20kg.</strong></p>
+                <h3>Required Training Course</h3>
+                <p><strong>High Speed Training — Manual Handling Course</strong></p>
+                <ul>
+                    <li><strong>Duration:</strong> 3 hours (online, self-paced)</li>
+                    <li><strong>Cost:</strong> £30 + VAT</li>
+                    <li><strong>Certificate:</strong> Awarded upon completion</li>
+                    <li><strong>Link:</strong> <a href="https://www.highspeedtraining.co.uk/courses/health-and-safety/manual-handling-training" target="_blank">High Speed Training Manual Handling</a></li>
+                </ul>
+                <p><strong>What you'll learn:</strong></p>
+                <ul>
+                    <li>How to lift safely without injuring your back</li>
+                    <li>Risks of improper manual handling</li>
+                    <li>Best practices for warehouse work</li>
+                    <li>When to ask for help</li>
+                </ul>
+                <p style="margin-top: 20px; padding: 15px; background: #fff3cd; border-radius: 4px; border-left: 4px solid #ffc107;">
+                    <strong>Action:</strong> Once you've completed the course, download your certificate and email to sat@byerim.com. Keep it as proof of training.
+                </p>
+            </section>
+
+            <section>
                 <h2>🔐 Confidentiality & Data Protection</h2>
                 <p>Keep the following confidential:</p>
                 <ul>
@@ -356,9 +379,14 @@
             <section>
                 <h2>📞 Contact & Support</h2>
                 <div class="contact-box">
-                    <h3>Questions?</h3>
+                    <h3>Questions About Policies?</h3>
                     <p><strong>Sat</strong> (COO): sat@byerim.com</p>
                     <p><strong>BeBe</strong> (HR): marge@byerim.com</p>
+                </div>
+                <div class="contact-box">
+                    <h3>Training & Development</h3>
+                    <p><strong>Manual Handling Training:</strong> <a href="https://www.highspeedtraining.co.uk/courses/health-and-safety/manual-handling-training" target="_blank">High Speed Training (£30)</a></p>
+                    <p>Required for all warehouse staff. Sat will arrange enrollment.</p>
                 </div>
                 <div class="contact-box">
                     <h3>External Support</h3>
@@ -453,5 +481,15 @@
             <p style="font-size: 0.85em; color: #ccc;">Receipt and acknowledgment must be documented. Signed confirmations are retained in personnel files per UK employment law.</p>
         </footer>
     </div>
+
+    <script>
+        // For printing, ensure signature section is on last page
+        window.addEventListener('beforeprint', function() {
+            const sigSection = document.querySelector('.important:last-of-type');
+            if (sigSection) {
+                sigSection.style.pageBreakInside = 'avoid';
+            }
+        });
+    </script>
 </body>
 </html>
